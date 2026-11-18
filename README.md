@@ -5,7 +5,7 @@ Fleet tracking and AI-powered fleet intelligence platform.
 | Path | Contents |
 | --- | --- |
 | `apps/api` | NestJS backend |
-| `apps/web` | Next.js dashboard |
+| `apps/web` | React + TypeScript (Vite) dashboard |
 | `infra` | Docker Compose and Traccar configuration |
 | `docs` | Architecture, setup, decision records |
 

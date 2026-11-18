@@ -7,7 +7,7 @@ MASAR is a fleet tracking platform: GPS positions arrive from real trackers (thr
 ## Repository map
 
 - `apps/api`: NestJS + TypeScript backend (modular monolith, see `docs/decisions/001-modular-monolith.md`)
-- `apps/web`: Next.js + TypeScript dashboard
+- `apps/web`: React + TypeScript (Vite) dashboard
 - `infra`: Docker Compose and Traccar configuration
 - `docs`: `architecture.md`, `setup.md`, `decisions/`
 

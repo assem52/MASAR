@@ -27,7 +27,7 @@ Dependencies point one way; a lower layer never imports a higher one.
 | Tracking | ingestion, live state, trips | Receive positions, keep the latest position, detect trips |
 | Intelligence | geofences, alerts, reports, AI | Rules, summaries and answers built on tracking data |
 
-When a lower layer must notify a higher one, it emits an in-process event (for example, a position was recorded). See the planned ADR-0002.
+When a lower layer must notify a higher one, it emits an in-process event (for example, a position was recorded). See the planned ADR on in-process events.
 
 ## Two paths through the API
 

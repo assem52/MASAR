@@ -1,3 +1,3 @@
 # apps/web
 
-React ts dashboard for fleet managers and dispatchers.
+React + TypeScript (Vite) dashboard for fleet managers and dispatchers.

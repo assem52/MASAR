@@ -10,11 +10,10 @@ CLAUDE.local.md
 **/CLAUDE.local.md
 .claude/settings.local.json
 
-# Node / NestJS / Next.js
+# Node / NestJS / Vite
 node_modules/
 dist/
 build/
-.next/
 out/
 coverage/
 *.tsbuildinfo
