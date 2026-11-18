@@ -2,20 +2,21 @@
 
 ## What this is
 
-MASAR is a fleet tracking platform: GPS positions arrive from real trackers (through Traccar) and from a simulator, the backend stores and processes them, and a web dashboard and a Flutter app (separate repository) show live vehicles, trips, alerts, reports and AI summaries. One demo company first, multi-company by design.
+MASAR is a fleet tracking platform: GPS positions arrive from a GPS device (through Traccar) and from a simulator (see `docs/architecture.md`), the backend stores and processes them, and a web dashboard and a Flutter app (separate repository) show live vehicles, trips, alerts, reports and AI summaries. One demo company first, multi-company by design.
 
 ## Repository map
 
 - `apps/api`: NestJS + TypeScript backend (modular monolith, see `docs/decisions/001-modular-monolith.md`)
 - `apps/web`: React + TypeScript (Vite) dashboard
-- `infra`: Docker Compose and Traccar configuration
+- `packages/contracts`: API contract types and Socket.IO events
+- `infra`: Docker Compose (Traccar is added in Phase 1)
 - `docs`: `architecture.md`, `setup.md`, `decisions/`
 
 Each app gets its own `CLAUDE.md` with area conventions once its first module exists.
 
 ## Commands
 
-None yet. Add run, test, lint and migrate commands here as soon as they exist.
+None yet. TODO(assem): add run, test, lint and migrate commands as soon as they exist as `package.json` scripts.
 
 ## Status
 
@@ -23,12 +24,14 @@ Phase 0. No application code yet. Decisions marked Proposed in `docs/decisions/`
 
 ## Rules
 
-- Work on one issue per session, on its own branch. Never commit to `main`.
+- Work on one task per session, on its own branch. Never commit to `main`.
+- Only write code that follows a pattern Assem has already built in this repo. When a task needs a new pattern, stop and say so instead of writing it.
+- Nothing gets merged that Assem cannot explain line by line.
 - Propose a plan before editing. Wait for approval on anything that changes architecture, the API contract or the database schema.
 - Every business table carries `company_id`, and every query is scoped by it. No exceptions.
 - Modules own their tables. Do not read or write another module's tables; use its exported service or an event.
 - Dependencies point one way: Platform ← Fleet ← Tracking ← Intelligence.
-- All user-facing text in the web app goes through translation files (English and Arabic, right-to-left).
+- All user-facing text in the web app goes through translation files (English and Arabic, right-to-left). Full team rules are in `CONTRIBUTING.md`.
 - AI features receive numbers computed by the backend. Never let a model produce figures that are not in the data it was given.
 - Do not add a dependency without stating why in the pull request.
 - Never edit an applied migration, CI configuration or any `.env` file.

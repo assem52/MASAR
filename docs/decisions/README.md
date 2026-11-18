@@ -14,7 +14,7 @@ When a decision is hard to reverse or affects more than one area: database, auth
 
 ## Index
 
-| # | Decision | Status |
-| --- | --- | --- |
-| [001](001-modular-monolith.md) | Build the backend as a modular monolith | Proposed |
-| [002](002-web-stack.md) | Build the web dashboard as a React + TypeScript SPA (Vite) | Proposed |
+| # | Decision | Status | Plan decision # |
+| --- | --- | --- | --- |
+| [001](001-modular-monolith.md) | Build the backend as a modular monolith | Proposed | TODO(assem) |
+| [002](002-web-stack.md) | Build the web dashboard as a React + TypeScript SPA (Vite) | Proposed | TODO(assem) |

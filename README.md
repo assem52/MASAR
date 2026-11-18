@@ -1,12 +1,41 @@
 # MASAR
 
-Fleet tracking and AI-powered fleet intelligence platform.
+MASAR is a fleet tracking platform with AI-powered fleet intelligence.
+GPS positions arrive from a GPS device (through Traccar) and from a simulator.
+The backend stores and processes them, and a web dashboard and a Flutter app show live vehicles, trips, alerts, reports and AI summaries.
+One demo company first, multi-company by design.
 
-| Path | Contents |
-| --- | --- |
-| `apps/api` | NestJS backend |
-| `apps/web` | React + TypeScript (Vite) dashboard |
-| `infra` | Docker Compose and Traccar configuration |
-| `docs` | Architecture, setup, decision records |
+## Folder map
 
-Setup: [`docs/setup.md`](docs/setup.md). Contributing: [`CONTRIBUTING.md`](CONTRIBUTING.md).
+| Folder | What it holds | Owner |
+| --- | --- | --- |
+| `apps/api` | NestJS backend | Assem |
+| `apps/web` | React + TypeScript (Vite) dashboard | Assem |
+| `packages/contracts` | API contract types and Socket.IO events | Assem |
+| `infra` | Docker Compose | Assem |
+| `docs` | Architecture and setup | TODO(assem) |
+| `docs/decisions` | Decision records | TODO(assem) |
+| `.github` | PR template and code owners | TODO(assem) |
+
+## Docs index
+
+| Doc | Question it answers | Who reads it |
+| --- | --- | --- |
+| [`docs/setup.md`](docs/setup.md) | How do I get a fresh clone running? | Everyone |
+| [`docs/architecture.md`](docs/architecture.md) | How is the system designed? | Everyone |
+| [`docs/decisions/README.md`](docs/decisions/README.md) | Which decisions were made, and why? | Everyone |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How do we work: branches, PRs, API changes? | Everyone |
+| [`CLAUDE.md`](CLAUDE.md) | What rules do coding agents follow? | Agents, Assem |
+| [`apps/api/README.md`](apps/api/README.md) | How is the backend organised? | Backend |
+| [`apps/web/README.md`](apps/web/README.md) | How is the dashboard organised? | Web |
+| [`packages/contracts/README.md`](packages/contracts/README.md) | What is the API and event contract? | Web, mobile |
+| [`infra/README.md`](infra/README.md) | Which services run locally? | Everyone |
+| [`.github/pull_request_template.md`](.github/pull_request_template.md) | What goes in a PR description? | Authors |
+
+## Quick start
+
+See [`docs/setup.md`](docs/setup.md).
+
+## Flutter app
+
+Separate repository: TODO(assem): URL.

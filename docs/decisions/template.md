@@ -1,5 +1,6 @@
 # ADR-NNN: <decision title>
 Status: Proposed | Accepted | Superseded by ADR-NNN · Date: YYYY-MM-DD
+Plan decision #: <number, or none>
 ## Context
 What forces us to decide (2–4 lines). Include the numbers that matter.
 ## Decision

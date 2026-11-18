@@ -1,5 +1,6 @@
 # ADR-001: Build the backend as a modular monolith
 Status: Proposed · Date: 2026-11-16
+Plan decision #: TODO(assem)
 ## Context
 The load is small: about 100 vehicles reporting every 10 seconds is 10 writes per second, which one application and one PostgreSQL instance handle easily. One person builds the backend, with coding agents, for a fixed demo date of 22 May 2027. Web and mobile need one stable API, and the demo must be reliable, yet the design must be able to grow to many companies.
 ## Decision

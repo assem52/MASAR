@@ -1,7 +1,7 @@
 # Code owners are requested automatically for review.
-# Replace the placeholders with GitHub usernames once the organisation exists, then uncomment.
+# TODO(assem): add Assem's GitHub username in place of <assem>, then uncomment.
 #
-# /apps/api/     <backend-lead>
-# /apps/web/     <web-lead>
-# /infra/        <backend-lead>
-# /docs/decisions/ <backend-lead>
+# /apps/api/          <assem>
+# /apps/web/          <assem>
+# /packages/contracts/ <assem>
+# /infra/             <assem>

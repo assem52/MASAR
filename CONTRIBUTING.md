@@ -4,11 +4,13 @@ These rules apply to everyone, whichever editor or AI tool you use.
 
 ## Workflow
 
-1. Pick an issue from the GitHub Projects board, or open one. Every issue has one owner, acceptance criteria and a milestone.
-2. Create a branch from `main` named `<type>/<scope>-<short-description>`. See [Branch names](#branch-names).
-3. Make small commits. Open a pull request early as a draft if you want feedback.
-4. Fill in the pull request template. Request review from the code owner of the area you changed.
-5. Merge when CI passes and the reviewer approves. Merges are squashed.
+1. Branch from `main` with the name `<type>/<scope>-<short-description>`. See [Branch names](#branch-names).
+2. Make small commits. Open a pull request early as a draft if you want feedback.
+3. Fill in the pull request template: goal, acceptance criteria, what is out of scope, and how it was tested.
+4. Request review from the code owner of the area you changed.
+5. Merge when CI is green and one reviewer approves. Merges are squashed.
+
+`main` is protected: every change goes through a pull request with one review and green CI (lint, type check, test, build). Branches are short-lived. GitHub issues are not used.
 
 ## Commit messages
 
@@ -25,22 +27,29 @@ Branches follow the commit style: `<type>/<scope>-<short-description>`, in lower
 ## Pull requests
 
 - The pull request title follows the commit format, because merges are squashed and the title becomes the commit on `main`.
-- One issue per pull request, small enough to review in about 15 minutes (as a guide, under 400 changed lines, not counting generated files).
-- Say what changed, why, and how you tested it.
+- One goal per pull request, small enough to review in about 15 minutes (as a guide, under about 400 changed lines, not counting generated files).
+- Every description states the goal, the acceptance criteria, what is out of scope, and how it was tested.
 - Reviews get a response within 48 hours.
+
+## Team rules
+
+- All user-facing text in the web app goes through translation files (English and Arabic, right-to-left ready).
+- Every business table carries `company_id`, and every query is scoped by it.
 
 ## Changing the API contract
 
-The API contract is generated from the backend code and published on the staging server. To change it:
+The API contract is generated from the backend code and published on the staging server (TODO(assem): staging URL). To change it:
 
-1. Open an issue describing the change and who it affects.
-2. Update the backend and the generated contract.
+1. Describe the change and who it affects in the pull request.
+2. Update the contract.
 3. Announce it in the `#api-changes` Discord channel.
-4. A breaking change needs acknowledgement from the mobile lead before it merges.
+4. Implement the change.
+
+A breaking change needs acknowledgement from the mobile lead before it merges. Details of the contract itself are in [`packages/contracts/README.md`](packages/contracts/README.md).
 
 ## Definition of done
 
-An issue is done only when:
+A change is done only when:
 
 - [ ] its acceptance criteria are met, and someone other than the author has seen it work
 - [ ] CI is green and it is merged to `main`
@@ -54,4 +63,4 @@ Significant technical decisions are recorded in `docs/decisions/`. See [`docs/de
 
 ## Using AI coding tools
 
-You may use any AI tool. You are responsible for every line you submit: if you cannot explain a change, do not open the pull request. Agent instructions for this repository live in `CLAUDE.md`.
+You may use any AI tool. You are responsible for every line you submit: nothing is merged that Assem cannot explain line by line. Agent instructions for this repository live in [`CLAUDE.md`](CLAUDE.md).

@@ -1,15 +1,7 @@
-## What changed
+## Goal
 
-## Why
+## Acceptance criteria
 
-Closes #
+## Out of scope
 
 ## How it was tested
-
-## Checklist
-
-- [ ] Acceptance criteria on the card are met
-- [ ] Lint, type check and tests pass locally
-- [ ] Documentation or decision records updated, if affected
-- [ ] No secrets, `.env` files or personal config committed
-- [ ] I can explain every line of this change
