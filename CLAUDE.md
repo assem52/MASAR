@@ -27,6 +27,7 @@ Phase 0. No application code yet. Decisions marked Proposed in `docs/decisions/`
 - Work on one task per session, on its own branch. Never commit to `main`.
 - Only write code that follows a pattern Assem has already built in this repo. When a task needs a new pattern, stop and say so instead of writing it.
 - Nothing gets merged that Assem cannot explain line by line.
+- Never add AI attribution to commits, pull requests or files: no `Co-Authored-By` trailer, no "Generated with" line.
 - Propose a plan before editing. Wait for approval on anything that changes architecture, the API contract or the database schema.
 - Every business table carries `company_id`, and every query is scoped by it. No exceptions.
 - Modules own their tables. Do not read or write another module's tables; use its exported service or an event.
