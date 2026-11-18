@@ -1,0 +1,7 @@
+# Code owners are requested automatically for review.
+# Replace the placeholders with GitHub usernames once the organisation exists, then uncomment.
+#
+# /apps/api/     <backend-lead>
+# /apps/web/     <web-lead>
+# /infra/        <backend-lead>
+# /docs/decisions/ <backend-lead>
