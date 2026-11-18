@@ -31,3 +31,6 @@ pnpm-debug.log*
 
 # Local data volumes
 infra/data/
+
+# Local-only notes
+/docs/learning/
