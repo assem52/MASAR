@@ -1,37 +1,35 @@
 # Secrets and local environment
-.env
-.env.local
-.env.*.local
-**/.env
-!**/.env.example
+# Ignore every env file at any depth; only the template is committed.
+# Order matters: the last matching rule wins, so the ! line must come after.
+.env*
+!.env.example
 
 # Personal Claude Code configuration
 CLAUDE.local.md
-**/CLAUDE.local.md
 .claude/settings.local.json
 
-# Node / NestJS / Vite
+# Dependencies and build output (Node / NestJS / Vite)
 node_modules/
 dist/
 build/
 out/
 coverage/
 *.tsbuildinfo
-npm-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+.eslintcache
+
+# Logs
+*.log
+logs/
 
 # Editors and OS
 .DS_Store
+Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
 *.swp
 
-.env*
-!.env.example
-
-# Local data volumes
+# Local data volumes (Docker)
 infra/data/
 
 # Local-only notes
