@@ -28,6 +28,9 @@ pnpm-debug.log*
 !.vscode/extensions.json
 *.swp
 
+.env*
+!.env.example
+
 # Local data volumes
 infra/data/
 
