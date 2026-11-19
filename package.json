@@ -1,0 +1,19 @@
+{
+  "name": "masar",
+  "description": "MASAR fleet tracking and AI-powered fleet intelligence platform (monorepo root)",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {},
+  "engines": {
+    "node": ">=26"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.21.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.21.0"
+}
