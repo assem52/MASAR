@@ -15,8 +15,8 @@ Today the API and the web app run locally on their own. The database services (D
 2. Install every workspace package from the root: `pnpm install`
 3. Copy `.env.example` to `.env`.
 4. Start the API and the web app: `pnpm dev`
-5. Open http://localhost:3000/api/health. You should see the health response from the API.
-6. Open the web app at the address Vite prints in the terminal (http://localhost:5173 by default).
+5. Open the web app at the address Vite prints in the terminal (http://localhost:5173 by default). Under the title it shows the API health response.
+6. To check the API alone, open http://localhost:3000/api/health.
 
 ## Everyday commands
 
