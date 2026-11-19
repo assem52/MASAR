@@ -4,7 +4,7 @@ NestJS backend: REST API, WebSocket gateway and position ingestion. Modular mono
 
 ## Commands
 
-TODO(assem): none yet. Add them when `package.json` scripts exist.
+Run from the repository root: `pnpm dev` starts the API on http://localhost:3000. The full command list is in [`CLAUDE.md`](CLAUDE.md#commands).
 
 ## Module conventions
 
