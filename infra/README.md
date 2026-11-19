@@ -2,10 +2,10 @@
 
 Docker Compose for the local stack.
 
-| Service | Phase | Ports | Volumes |
-| --- | --- | --- | --- |
-| PostgreSQL + PostGIS | Milestone 0 | TODO(assem) | TODO(assem) |
-| Redis | Milestone 0 | TODO(assem) | TODO(assem) |
-| Traccar | Phase 1 | TODO(assem) | TODO(assem) |
+| Service | Added in |
+| --- | --- |
+| PostgreSQL + PostGIS | Milestone 0 |
+| Redis | Milestone 0 |
+| Traccar | Phase 1 |
 
-No compose file exists yet. Start-up steps live in [`docs/setup.md`](../docs/setup.md).
+No compose file exists yet. Ports and volumes are listed here when it is added. Start-up steps live in [`docs/setup.md`](../docs/setup.md).

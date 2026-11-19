@@ -4,11 +4,11 @@ React + TypeScript (Vite) single-page dashboard for fleet managers and dispatche
 
 ## Commands
 
-TODO(assem): none yet. Add them when `package.json` scripts exist.
+Added when the app is scaffolded.
 
 ## Folder conventions
 
-TODO(assem): to be defined when the app is scaffolded.
+Defined when the app is scaffolded.
 
 ## Translation rule
 
@@ -16,4 +16,4 @@ All user-facing text goes through translation files (English and Arabic, right-t
 
 ## Environment variables
 
-Vite exposes only variables prefixed with `VITE_`. TODO(assem): list them once the app needs any.
+Vite exposes only variables prefixed with `VITE_`. They are listed here once the app needs any.

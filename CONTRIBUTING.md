@@ -38,7 +38,7 @@ Branches follow the commit style: `<type>/<scope>-<short-description>`, in lower
 
 ## Changing the API contract
 
-The API contract is generated from the backend code and published on the staging server (TODO(assem): staging URL). To change it:
+The API contract is generated from the backend code and published on the staging server, which is set up in Phase 1. To change it:
 
 1. Describe the change and who it affects in the pull request.
 2. Update the contract.

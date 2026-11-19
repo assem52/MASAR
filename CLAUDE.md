@@ -12,15 +12,15 @@ MASAR is a fleet tracking platform: GPS positions arrive from a GPS device (thro
 - `infra`: Docker Compose (Traccar is added in Phase 1)
 - `docs`: `architecture.md`, `setup.md`, `decisions/`
 
-Each app gets its own `CLAUDE.md` with area conventions once its first module exists.
+Each app has its own `CLAUDE.md` with area conventions: [`apps/api/CLAUDE.md`](apps/api/CLAUDE.md) (web added when it is scaffolded).
 
 ## Commands
 
-None yet. TODO(assem): add run, test, lint and migrate commands as soon as they exist as `package.json` scripts.
+Run from the root: `pnpm dev`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`, `pnpm format`. Each runs in every package that has the script. Migration commands are added with the database.
 
 ## Status
 
-Phase 0. No application code yet. Decisions marked Proposed in `docs/decisions/` are not final: do not build on them as settled facts.
+Phase 0. `apps/api` holds the NestJS scaffold only; `apps/web` and `packages/contracts` are not scaffolded. Decisions marked Proposed in `docs/decisions/` are not final: do not build on them as settled facts.
 
 ## Rules
 

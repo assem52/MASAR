@@ -1,7 +1,6 @@
 # Code owners are requested automatically for review.
-# TODO(assem): add Assem's GitHub username in place of <assem>, then uncomment.
-#
-# /apps/api/          <assem>
-# /apps/web/          <assem>
-# /packages/contracts/ <assem>
-# /infra/             <assem>
+
+/apps/api/           @assem52
+/apps/web/           @assem52
+/packages/contracts/ @assem52
+/infra/              @assem52

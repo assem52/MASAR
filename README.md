@@ -13,9 +13,9 @@ One demo company first, multi-company by design.
 | `apps/web` | React + TypeScript (Vite) dashboard | Assem |
 | `packages/contracts` | API contract types and Socket.IO events | Assem |
 | `infra` | Docker Compose | Assem |
-| `docs` | Architecture and setup | TODO(assem) |
-| `docs/decisions` | Decision records | TODO(assem) |
-| `.github` | PR template and code owners | TODO(assem) |
+| `docs` | Architecture and setup | Assem |
+| `docs/decisions` | Decision records | Assem |
+| `.github` | PR template and code owners | Assem |
 
 ## Docs index
 
@@ -26,6 +26,7 @@ One demo company first, multi-company by design.
 | [`docs/decisions/README.md`](docs/decisions/README.md) | Which decisions were made, and why? | Everyone |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How do we work: branches, PRs, API changes? | Everyone |
 | [`CLAUDE.md`](CLAUDE.md) | What rules do coding agents follow? | Agents, Assem |
+| [`apps/api/CLAUDE.md`](apps/api/CLAUDE.md) | What must agents know about the backend? | Agents, backend |
 | [`apps/api/README.md`](apps/api/README.md) | How is the backend organised? | Backend |
 | [`apps/web/README.md`](apps/web/README.md) | How is the dashboard organised? | Web |
 | [`packages/contracts/README.md`](packages/contracts/README.md) | What is the API and event contract? | Web, mobile |
@@ -38,4 +39,4 @@ See [`docs/setup.md`](docs/setup.md).
 
 ## Flutter app
 
-Separate repository: TODO(assem): URL.
+Separate repository, owned by the mobile team. See [ADR-004](docs/decisions/004-repo-layout.md).

@@ -6,21 +6,19 @@ The API contract shared by `apps/web` and the Flutter app.
 
 TypeScript types generated from the API's OpenAPI spec, which NestJS generates. Never edit them by hand.
 
-- Regenerate: TODO(assem): command, once the script exists.
-- `apps/web` imports the types from this package: TODO(assem): import path, once the package exists.
-- The Flutter team gets the published spec from TODO(assem): staging URL.
+The generation script, the import path for `apps/web` and the staging address where the Flutter team gets the spec are added in Phase 1, together with OpenAPI v0.
 
 ## Socket.IO events
 
-Hand-written. One room per company.
+Hand-written. One room per company. Payloads are defined in Phase 1.
 
-| Event | Direction | Payload | Room |
-| --- | --- | --- | --- |
-| `vehicle.location.updated` | server → client | TODO(assem) | company |
-| `vehicle.status.changed` | server → client | TODO(assem) | company |
-| `alert.created` | server → client | TODO(assem) | company |
-| `trip.started` | server → client | TODO(assem) | company |
-| `trip.ended` | server → client | TODO(assem) | company |
+| Event | Direction | Room |
+| --- | --- | --- |
+| `vehicle.location.updated` | server → client | company |
+| `vehicle.status.changed` | server → client | company |
+| `alert.created` | server → client | company |
+| `trip.started` | server → client | company |
+| `trip.ended` | server → client | company |
 
 ## Changing the contract
 
