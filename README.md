@@ -7,15 +7,15 @@ One demo company first, multi-company by design.
 
 ## Folder map
 
-| Folder | What it holds | Owner |
-| --- | --- | --- |
-| `apps/api` | NestJS backend | Assem |
-| `apps/web` | React + TypeScript (Vite) dashboard | Assem |
-| `packages/contracts` | API contract types and Socket.IO events | Assem |
-| `infra` | Docker Compose | Assem |
-| `docs` | Architecture and setup | Assem |
-| `docs/decisions` | Decision records | Assem |
-| `.github` | PR template and code owners | Assem |
+| Folder | What it holds |
+| --- | --- |
+| `apps/api` | NestJS backend |
+| `apps/web` | React + TypeScript (Vite) dashboard |
+| `packages/contracts` | API contract types and Socket.IO events |
+| `infra` | Docker Compose |
+| `docs` | Architecture and setup |
+| `docs/decisions` | Decision records |
+| `.github` | PR template and code owners |
 
 ## Docs index
 
@@ -25,7 +25,7 @@ One demo company first, multi-company by design.
 | [`docs/architecture.md`](docs/architecture.md) | How is the system designed? | Everyone |
 | [`docs/decisions/README.md`](docs/decisions/README.md) | Which decisions were made, and why? | Everyone |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How do we work: branches, PRs, API changes? | Everyone |
-| [`CLAUDE.md`](CLAUDE.md) | What rules do coding agents follow? | Agents, Assem |
+| [`CLAUDE.md`](CLAUDE.md) | What rules do coding agents follow? | Agents |
 | [`apps/api/CLAUDE.md`](apps/api/CLAUDE.md) | What must agents know about the backend? | Agents, backend |
 | [`apps/api/README.md`](apps/api/README.md) | How is the backend organised? | Backend |
 | [`apps/web/README.md`](apps/web/README.md) | How is the dashboard organised? | Web |
