@@ -1,6 +1,6 @@
 # ADR-002: Build the web dashboard as a React + TypeScript single-page app (Vite)
 Status: Proposed · Date: 2026-11-18
-Plan decision #: TODO(assem)
+Plan decision #: 13
 ## Context
 The web dashboard is used only after login: live map, WebSocket positions, trips, alerts and reports, in English and Arabic (right-to-left). The backend is a separate NestJS API that serves REST and WebSocket. The web app has no public pages and no SEO need. One person builds it, with coding agents, for a fixed demo date of 22 May 2027.
 ## Decision

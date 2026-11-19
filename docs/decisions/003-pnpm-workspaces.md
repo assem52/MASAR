@@ -1,6 +1,6 @@
 # ADR-003: Manage the monorepo with pnpm workspaces
 Status: Proposed · Date: 2026-11-19
-Plan decision #: TODO(assem)
+Plan decision #: none
 ## Context
 The repository holds `apps/api` (NestJS), `apps/web` (React + Vite) and `packages/contracts`. `apps/web` must import the contract types from `packages/contracts` without publishing it anywhere. One person builds it, so a single install and a single lockfile keep setup and CI simple.
 ## Decision
