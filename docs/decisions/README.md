@@ -18,3 +18,4 @@ When a decision is hard to reverse or affects more than one area: database, auth
 | --- | --- | --- | --- |
 | [001](001-modular-monolith.md) | Build the backend as a modular monolith | Proposed | TODO(assem) |
 | [002](002-web-stack.md) | Build the web dashboard as a React + TypeScript SPA (Vite) | Proposed | TODO(assem) |
+| [003](003-pnpm-workspaces.md) | Manage the monorepo with pnpm workspaces | Proposed | TODO(assem) |

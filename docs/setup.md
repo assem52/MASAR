@@ -6,8 +6,8 @@ Not runnable yet. This page is filled in during Phase 0, and every team member t
 
 - Git
 - Docker Desktop
-- Node.js (LTS), pinned in `.nvmrc` (TODO(assem): add `.nvmrc` with the version)
-- pnpm (proposed, no decision record yet)
+- Node.js 26, pinned in `.nvmrc`
+- pnpm 12.21.0, pinned in the root `package.json` ([ADR-003](decisions/003-pnpm-workspaces.md))
 
 ## Steps
 

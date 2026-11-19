@@ -51,4 +51,4 @@ When a lower layer must notify a higher one, it emits an in-process event (for e
 
 ## Not decided yet
 
-Token storage in the browser, trip-detection rules, map rendering for 100+ markers, the database schema, the GPS device choice, and the package manager (pnpm is proposed).
+Token storage in the browser, trip-detection rules, map rendering for 100+ markers, the database schema, the GPS device choice.
