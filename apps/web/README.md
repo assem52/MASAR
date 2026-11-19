@@ -4,7 +4,11 @@ React + TypeScript (Vite) single-page dashboard for fleet managers and dispatche
 
 ## Commands
 
-Added when the app is scaffolded.
+Run from the repo root with `pnpm --filter @masar/web <script>`, or from `apps/web`:
+
+- `pnpm dev`: start the Vite dev server
+- `pnpm build`: type-check and build to `dist/`
+- `pnpm lint`, `pnpm typecheck`, `pnpm format`
 
 ## Folder conventions
 
