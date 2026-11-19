@@ -1,6 +1,6 @@
 # Local setup
 
-Today the API runs locally on its own. The database services (Docker Compose) and the web app are added before Milestone 0 (28 Nov 2026), and this page grows with them. Every team member tests it from a fresh clone.
+Today the API and the web app run locally on their own. The database services (Docker Compose) are added before Milestone 0 (28 Nov 2026), and this page grows with them. Every team member tests it from a fresh clone.
 
 ## Prerequisites
 
@@ -14,8 +14,9 @@ Today the API runs locally on its own. The database services (Docker Compose) an
 1. Clone the repository and open its folder.
 2. Install every workspace package from the root: `pnpm install`
 3. Copy `.env.example` to `.env`.
-4. Start the API: `pnpm dev`
-5. Open http://localhost:3000. You should see `Hello World!`.
+4. Start the API and the web app: `pnpm dev`
+5. Open http://localhost:3000/api/health. You should see the health response from the API.
+6. Open the web app at the address Vite prints in the terminal (http://localhost:5173 by default).
 
 ## Everyday commands
 
@@ -23,7 +24,7 @@ Run these from the root. Each one runs in every package that has the script.
 
 | Command | What it does |
 | --- | --- |
-| `pnpm dev` | Start the API with reload on save |
+| `pnpm dev` | Start the API and the web app with reload on save |
 | `pnpm lint` | Lint |
 | `pnpm typecheck` | Type check |
 | `pnpm test` | Unit tests |
